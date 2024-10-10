@@ -1,0 +1,61 @@
+body {
+    background-color: #e0f7fa; /* Light blue background */
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    color: #2e3b4e; /* Darker blue for contrast */
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.7);
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#status {
+    font-size: 24px;
+    margin: 20px;
+    color: #00796b; /* Dark teal color */
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin: 5px;
+    font-size: 36px;
+    line-height: 100px;
+    background-color: #ffffff; /* White background for cells */
+    border: 2px solid #90caf9; /* Light blue border */
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cell.taken {
+    background-color: #b2ebf2; /* Light cyan for taken cells */
+}
+
+.cell:hover {
+    background-color: #b2dfdb; /* Light teal on hover */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #00897b; /* Dark teal button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00796b; /* Darker teal on hover */
+}
